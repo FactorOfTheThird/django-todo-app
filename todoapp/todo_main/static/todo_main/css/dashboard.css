@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "TASA Orbiter", sans-serif;
+
+    background-color: #1C1C1C;
+    color: #B8A48B;
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+hr {
+    width: 100%;
+    color: #8B4B28;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#add_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+#add_form>input[type=text] {
+    padding: 8px 12px;
+    min-width: 300px;
+
+    border-radius: 4px;
+    border: none;
+
+    color: white;
+
+    background-color: #3E2C23;
+    outline: none;
+}
+
+#add_form>input[type=text]:focus {
+    outline: 2px solid #8B4B28;
+}
+
+/* the description input */
+#add_form>input:nth-child(3) {
+    min-height: 80px;
+    vertical-align: top;
+}
+
+.add_btn {
+    width: 100%;
+    padding: 8px;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+
+    color: white;
+
+    background-color: #8B4B28;
+    transition: opacity 0.1s ease
+}
+
+.add_btn:hover {
+    background-color: #5E4630;
+}
+
+#todo_list {
+    width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem;
+}
+
+#no_todos_label {
+    width: 100%;
+    background-color: #3E2C23;
+
+    padding: 1rem;
+
+    border-radius: 4px;
+
+    text-align: center;
+}
+
+.todo_item {
+    width: 100%;
+    padding: 1rem;
+
+    background-color: #3E2C23;
+
+    border-radius: 4px;
+
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.todo_item_btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.toggle_btn,
+.delete_btn {
+    padding: 8px;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+    color: white;
+
+    border-radius: 4px;
+
+    background-color: #8B4B28;
+}
+
+.toggle_btn:hover,
+.delete_btn:hover {
+    background-color: #5E4630;
+}
+
+.toggle_btn {
+    opacity: 0.5;
+}
+
+.completed {
+    opacity: 1;
+}
+
+.title,
+.description {
+    opacity: 0.5
+}
